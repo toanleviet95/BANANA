@@ -11,4 +11,8 @@ export class LoginFormComponent implements OnInit {
     ngOnInit() {
 
     }
+
+    onSignin() {
+      window.location.href = 'newsfeed';
+    }
 }
