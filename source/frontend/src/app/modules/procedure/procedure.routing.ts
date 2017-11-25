@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ProcedureContentComponent } from './components/procedure-content/procedure-content.component';
 import { ProcedureSubmitComponent } from './components/procedure-submit/procedure-submit.component';
+import { ProcedureSearchComponent } from './components/procedure-search/procedure-search.component';
 
 const routes: Routes = [
     {
@@ -12,6 +13,10 @@ const routes: Routes = [
     {
         path: 'submit',
         component: ProcedureSubmitComponent
+    },
+    {
+        path: 'search',
+        component: ProcedureSearchComponent
     }
 ];
 
