@@ -1,0 +1,7 @@
+.grid_element {
+    display: inline-block;
+    width: 67px;
+    height:40px;
+    float: center;
+    margin: 4px
+  }

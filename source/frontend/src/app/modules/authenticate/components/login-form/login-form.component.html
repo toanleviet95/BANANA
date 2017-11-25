@@ -8,10 +8,12 @@
     <p class="signup-text">Cùng trải nghiệm những tiện ích của cư dân thành phố thông minh</p>
     <form action="#">
       <fieldset class="form-group">
-        <input type="email" class="form-control" id="example-email" placeholder="Email">
+        <input [(ngModel)]="user.email" name="email" type="email" class="form-control"  placeholder="Email">
+        <div style="color: yellow" *ngIf="emailErr">{{emailErr}}</div>
       </fieldset>
       <fieldset class="form-group">
-        <input type="password" class="form-control" id="example-password" placeholder="Mật khẩu">
+        <input [(ngModel)]="user.password" name="password" type="password" class="form-control"  placeholder="Mật khẩu">
+        <div style="color: yellow" *ngIf="passwordErr">{{passwordErr}}</div>
       </fieldset>
     </form>
     <button (click)="onSignin()" class="btn-secondary">Đăng nhập</button>

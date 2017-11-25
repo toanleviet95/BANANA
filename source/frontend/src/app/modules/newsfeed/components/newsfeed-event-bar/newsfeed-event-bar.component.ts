@@ -6,7 +6,17 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NewsfeedEventBarComponent implements OnInit {
+    arrEvents = [];
     ngOnInit() {
-
+      this.arrEvents = [
+        {
+          content: 'Họp tổ dân phố',
+          date: '20/11/2017'
+        },
+        {
+          content: 'Họp tổ dân phố',
+          date: '20/11/2017'
+        }
+      ];
     }
 }
