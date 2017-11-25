@@ -1,0 +1,11 @@
+
+		<app-common-header></app-common-header>
+    <div *ngIf="loading" class="loading">Loading</div>
+    <ng-container *ngIf="!loading">
+      <div id="page-contents">
+          <router-outlet></router-outlet>
+      </div>
+      <app-common-footer></app-common-footer>
+    </ng-container>
+
+

@@ -1,0 +1,35 @@
+{
+    "name": "comments",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "id": {
+            "type": "number"
+        },
+        "account_id": {
+            "type": "number",
+            "required": true
+        },
+        "post_id": {
+            "type": "number",
+            "required": true
+        },
+        "content": {
+            "type": "string",
+            "required": true
+        },
+        "created_at": {
+            "type": "string"
+        },
+        "updated_at": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

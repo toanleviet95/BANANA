@@ -1,0 +1,78 @@
+{
+    "name": "accounts",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "id": {
+            "type": "number"
+        },
+        "email": {
+            "type": "string",
+            "required": true
+        },
+        "password": {
+            "type": "string",
+            "required": true
+        },
+        "role_id": {
+            "type": "number",
+            "required": true
+        },
+        "platform_id": {
+            "type": "number",
+            "required": true
+        },
+        "first_name": {
+            "type": "string"
+        },
+        "last_name": {
+            "type": "string"
+        },
+        "date_of_birth": {
+            "type": "string"
+        },
+        "gender": {
+            "type": "number"
+        },
+        "city": {
+            "type": "string"
+        },
+        "country": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "schools": {
+            "type": "string"
+        },
+        "interests": {
+            "type": "string"
+        },
+        "avatar": {
+            "type": "string"
+        },
+        "background_cover": {
+            "type": "string"
+        },
+        "friends": {
+            "type": "number"
+        },
+        "token": {
+            "type": "string"
+        },
+        "created_at": {
+            "type": "string"
+        },
+        "updated_at": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}
