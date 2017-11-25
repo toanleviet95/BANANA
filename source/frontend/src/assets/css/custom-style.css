@@ -184,6 +184,34 @@
     border-color: #27aae1;
 }
 
+.timeline-cover {
+    background: url("/assets/images/user_cover.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 360px;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+}
+
+.timeline .post-content::before {
+    border-left: none;
+    content: "";
+    position: absolute;
+    background: none;
+    width: 1px;
+    height: 98%;
+    left: -145px;
+    top: 15px;
+}
+.procedure-table-title {
+    background: #27aae1;
+    color: white;
+}
+
+.step-thumbnail {
+    border: none;
+}
+
 .text-muted {
     font-size: 11px;
 }
