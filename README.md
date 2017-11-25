@@ -3,6 +3,7 @@
 ### Binh Duong Hackathon Competition ###
 
 ### Demo ###
+* Link demo: https://social-intranet.herokuapp.com
 * Login
 Username: user@gmail.com
 Password: 123456

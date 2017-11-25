@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ComplainRoutingModule } from './complain.routing';
 
 import { ComplainComponent } from './components/complain/complain.component';
-import { LeftSideBarComponent } from '../../shared/components/left-side-bar/left-side-bar.component';
+import { ComplainLeftSideBarComponent } from './components/complain-left-side-bar/complain-left-side-bar.component';
 
 @NgModule({
     imports: [
@@ -14,7 +14,7 @@ import { LeftSideBarComponent } from '../../shared/components/left-side-bar/left
     ],
     declarations: [
         ComplainComponent,
-        LeftSideBarComponent
+        ComplainLeftSideBarComponent
     ],
     providers: []
 })

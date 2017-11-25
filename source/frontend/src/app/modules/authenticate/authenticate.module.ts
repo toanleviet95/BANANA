@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { LoginFormComponent } from './components/login-form/login-form.component';
-import {  LoginService } from './services/login.service';
 import { AuthenticateRoutingModule } from './authenticate.routing';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { AuthenticateRoutingModule } from './authenticate.routing';
         LoginFormComponent
     ],
     providers: [
-        LoginService
     ]
 })
 
