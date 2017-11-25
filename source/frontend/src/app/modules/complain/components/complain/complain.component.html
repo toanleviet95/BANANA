@@ -16,7 +16,40 @@
           <h3 class="panel-title">Gửi góp ý</h3>
         </div>
         <div class="panel-body">
-          Panel content
+          <form class="form">
+            <div class="row">
+              <div class="col-xs-6 form-group">
+                <label>Bạn muốn góp ý về chủ đề gì?</label>
+                <select class="form-control" id="sel1">
+                  <option>Cán bộ</option>
+                  <option>Môi trường</option>
+                  <option>Dịch vụ xã hội</option>
+                  <option>Khác</option>
+                </select>
+              </div>
+              <div class="col-xs-6 form-group">
+                <label>Bạn muốn góp ý về việc gì?</label>
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <label>Bạn có thể mô tả về vấn đề này được không?</label>
+                <div>
+                  <textarea class="form-control" rows="4"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 form-group">
+                <div class="col-sm-12">
+                  <button class="btn btn-primary pull-left">Gửi góp ý</button>
+                  <input style="margin-left: 20px" type="checkbox"> Tôi muốn góp ý ẩn danh
+                </div>
+              </div>
+
+            </div>
+          </form>
         </div>
       </div>
 
@@ -25,40 +58,99 @@
           <h3 class="panel-title">Các góp ý của người dân</h3>
         </div>
         <div class="panel-body">
-          <form class="form">
-            <div class="row">
-              <div class="col-xs-6 form-group">
-                <label>Bạn muốn góp ý về chủ đề gì?</label>
-                <select class="form-control" id="sel1">
-                    <option>Cán bộ</option>
-                    <option>Môi trường</option>
-                    <option>Dịch vụ xã hội</option>
-                    <option>Khác</option>
-                  </select>
-              </div>
-              <div class="col-xs-6 form-group">
-                <label>Bạn muốn góp ý về việc gì?</label>
-                <input class="form-control" type="text" />
+          <div class="row">
+            <div class="col-xs-6 form-group">
+              <label>Chủ đề đang xem</label>
+              <select class="form-control" id="sel1">
+                <option>Cán bộ</option>
+                <option>Môi trường</option>
+                <option>Dịch vụ xã hội</option>
+                <option>Khác</option>
+              </select>
+            </div>
+            <div class="col-xs-6 form-group">
+              <label>Kiểu xem</label>
+              <select class="form-control" id="sel1">
+                <option>Mới nhất</option>
+                <option>Ủng hộ nhiều nhất</option>
+                <option>Phản đối nhiều nhất</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <div class="profile-info">
+                <img src="assets/images/user_ava.png" alt="" class="img-responsive profile-photo" />
+                <p>Ẩn danh</p>
               </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                    <label>Bạn có thể mô tả về vấn đề này được không?</label>
-                    <div>
-                      <textarea class="form-control" rows="4"></textarea>
-                    </div>
+            <div class="col-md-10">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Góp ý về việc</h3>
+                  <div style="float: right; margin-top: -22px">
+                      <span style="color: #2196f3"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                      <span style="color: #f44336; padding-left: 10px"><i class="fa fa-trash" aria-hidden="true"></i></span>
                   </div>
-              </div>
-              <div class="row">
-                  <div class="col-xs-12 form-group">
-                    <div class="col-sm-12">
-                      <button class="btn btn-primary pull-left">Gửi góp ý</button>
-                      <input style="margin-left: 20px" type="checkbox">  Tôi muốn góp ý ẩn danh
-                    </div>
-                  </div>
-                  
                 </div>
-          </form>
+                <div class="panel-body">
+                  <div class="row">
+                    <strong>Chủ đề: </strong>
+                    <span class="label label-warning">Cán bộ</span>
+                    <p style="float: right; font-size: 12px">18:34 22/11/2017</p>
+                  </div>
+                  <div class="row">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien
+                      dui mattis dui, non pulvinar lorem felis nec erat. orem ipsum dolor sit amet, consectetur adipiscing
+                      elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec
+                      erat
+                    </p>
+                  </div>
+                  <div class="row">
+                      <span style="color: #2196f3"><i class="fa fa-thumbs-o-up icon-right" aria-hidden="true"></i>10</span>
+                      <span style="color: #f44336; padding-left: 10px"><i class="fa fa-thumbs-o-down icon-right" aria-hidden="true"></i>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <div class="profile-info">
+                <img src="assets/images/user_ava.png" alt="" class="img-responsive profile-photo" />
+                <a href="/timeline">Mĩ Dung</a>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Góp ý về việc</h3>
+                  <div style="float: right; margin-top: -22px">
+                      <span style="color: #2196f3"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                      <span style="color: #f44336; padding-left: 10px"><i class="fa fa-trash" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <strong>Chủ đề: </strong>
+                    <span class="label label-primary">Môi trường sống</span>
+                    <p style="float: right; font-size: 12px">18:34 22/11/2017</p>
+                  </div>
+                  <div class="row">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien
+                      dui mattis dui, non pulvinar lorem felis nec erat. orem ipsum dolor sit amet, consectetur adipiscing
+                      elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec
+                      erat
+                    </p>
+                  </div>
+                  <div class="row">
+                    <span style="color: #2196f3"><i class="fa fa-thumbs-o-up icon-right" aria-hidden="true"></i>10</span>
+                    <span style="color: #f44336; padding-left: 10px"><i class="fa fa-thumbs-o-down icon-right" aria-hidden="true"></i>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
