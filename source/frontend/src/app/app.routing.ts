@@ -59,6 +59,26 @@ const routes: Routes = [
           loadChildren: './modules/messenger/messenger.module#MessengerModule'
         }
       ]
+    },
+    {
+      path: 'staff/manage',
+      component: CommonLayoutComponent,
+      children: [
+        {
+          path: '',
+          loadChildren: './modules/staff-manage-files/staff-manage-files.module#StaffManageFilesModule'
+        }
+      ]
+    },
+    {
+      path: 'staff/execute',
+      component: CommonLayoutComponent,
+      children: [
+        {
+          path: '',
+          loadChildren: './modules/staff-execute-file/staff-execute-file.module#StaffExecuteFileModule'
+        }
+      ]
     }
 ];
 

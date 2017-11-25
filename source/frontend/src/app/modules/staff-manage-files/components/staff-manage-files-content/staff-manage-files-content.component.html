@@ -1,0 +1,132 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 static">
+      <app-left-side-bar></app-left-side-bar>
+    </div>
+    <div class="col-md-8">
+
+      <ol class="breadcrumb">
+        <li>
+          <a href="/">Trang chủ</a>
+        </li>
+        <li>Dịch vụ công</li>
+        <li class="active">Xử lý hồ sơ</li>
+      </ol>
+
+      <div class="panel panel-default">
+        <table class="table table-bordered">
+          <thead class="procedure-table-title">
+            <tr>
+              <th>Số biên nhận</th>
+              <th>Tên thủ tục</th>
+              <th>Người nộp</th>
+              <th>Thời gian tiếp nhận</th>
+              <th>Trạng thái</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>
+                <div class="dropdown" role="menu">
+                  <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">HS000001</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Xử lý hồ sơ</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Yêu cầu bổ sung</a></li>
+                    <li><a href="#">Đánh dấu hoàn tất</a></li>
+                  </ul>
+                </div>
+              </td>
+              <td>Cấp giấy chứng nhận đủ điều kiện vệ sinh an toàn thực phẩm</td>
+              <td>
+                <a href="#">Ngô Đình Duy Quang</a>
+              </td>
+              <td>09:01 25/11/2017</td>
+              <td>Vừa tiếp nhận</td>
+            </tr>
+
+            <tr>
+                <td>
+                  <div class="dropdown" role="menu">
+                    <a href="#" class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown">HS000002</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li><a href="#">Xử lý hồ sơ</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#myModal">Yêu cầu bổ sung</a></li>
+                      <li><a href="#">Đánh dấu hoàn tất</a></li>
+                    </ul>
+                  </div>
+                </td>
+                <td>Đăng ký kinh doanh hộ gia đình</td>
+                <td>
+                  <a href="#">Lê Viết Toàn</a>
+                </td>
+                <td>11:22 25/11/2017</td>
+                <td>Đang xử lý</td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <div class="dropdown" role="menu">
+                      <a href="#" class="dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown">HS000003</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                        <li><a href="#">Xử lý hồ sơ</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">Yêu cầu bổ sung</a></li>
+                        <li><a href="#">Đánh dấu hoàn tất</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>Thủ tục nhập hộ khẩu</td>
+                  <td>
+                    <a href="#">Nguyễn Minh Thiện</a>
+                  </td>
+                  <td>13:02 25/11/2017</td>
+                  <td>Chờ bổ sung</td>
+                </tr>
+
+                <tr>
+                    <td>
+                      <div class="dropdown" role="menu">
+                        <a href="#" class="dropdown-toggle" id="dropdownMenu4" data-toggle="dropdown">HS000004</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                          <li><a href="/staff/execute">Xử lý hồ sơ</a></li>
+                          <li><a href="#" data-toggle="modal" data-target="#myModal">Yêu cầu bổ sung</a></li>
+                          <li><a href="#">Đánh dấu hoàn tất</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>Cấp phép thiết lập trang thông tin điện tử tổng hợp trên internet</td>
+                    <td>
+                      <a href="#">Nguyễn Tiến Dũng</a>
+                    </td>
+                    <td>14:55 25/11/2017</td>
+                    <td>Đã hoàn tất</td>
+                  </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Yêu cầu bổ sung hồ sơ</h4>
+            </div>
+            <div class="modal-body">
+              <p>Nội dung cần bổ sung</p>
+              <textarea></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Gửi yêu cầu</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+  </div>
+</div>

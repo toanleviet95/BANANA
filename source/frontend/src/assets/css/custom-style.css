@@ -192,3 +192,7 @@
 .step-thumbnail {
     border: none;
 }
+
+.dropdown > ul > li {
+    list-style-image:none;
+}
