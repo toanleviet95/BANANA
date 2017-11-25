@@ -1,0 +1,89 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 static">
+      <app-newsfeed-account-bar></app-newsfeed-account-bar>
+      <app-newsfeed-online-bar></app-newsfeed-online-bar>
+    </div>
+    <div class="col-md-6">
+
+      <!-- Post Create Box
+            ================================================= -->
+      <div class="create-post">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="form-group">
+              <img src="http://placehold.it/300x300" alt="" class="profile-photo-md" />
+              <textarea name="post"  cols="100" rows="2" class="form-control" placeholder="Bạn đang nghĩ gì ?"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div style="float: right" class="tools">
+              <button class="btn btn-primary pull-right">Đăng bài</button>
+              <ul class="publishing-tools list-inline">
+                <li>
+                  <a href="#">
+                    <i class="ion-images"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Post Create Box End-->
+      <ng-container>
+        <div class="post-content">
+          <div class="post-container">
+            <img src="http://placehold.it/300x300" alt="user" class="profile-photo-md pull-left" />
+            <div class="post-detail">
+              <div class="user-info">
+                <h5>
+                  <a href="timeline.html" class="profile-link">Toan Le Viet</a>
+                </h5>
+                <p class="text-muted">12:22:22 21/11/2017</p>
+              </div>
+              <div class="reaction">
+                <a class="btn text-green">
+                  <i class="icon ion-thumbsup"></i> 13</a>
+                <a class="btn text-red">
+                  <i class="fa fa-thumbs-down"></i> 0</a>
+              </div>
+              <div class="line-divider"></div>
+              <div class="post-text">
+                <p>Noi dung</p>
+              </div>
+              <div class="line-divider"></div>
+              <div class="post-comment">
+                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
+                <p>
+                  <a href="timeline.html" class="profile-link">Diana </a>
+                  <i class="em em-laughing"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+              </div>
+              <div class="post-comment">
+                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
+                <p>
+                  <a href="timeline.html" class="profile-link">John</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+              </div>
+              <div class="post-comment">
+                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
+                <input type="text" class="form-control" placeholder="Post a comment">
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+      </div>
+      <!-- Newsfeed Common Side Bar Right
+          ================================================= -->
+      <div class="col-md-3 static">
+        <div class="suggestions" id="sticky-sidebar">
+          <app-newsfeed-noti-bar></app-newsfeed-noti-bar>
+          <app-newsfeed-event-bar></app-newsfeed-event-bar>
+        </div>
+      </div>
+    </div>
+  </div>
