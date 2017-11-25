@@ -13,14 +13,14 @@
           <div class="col-md-12 col-sm-12">
             <div class="form-group">
               <img src="http://placehold.it/300x300" alt="" class="profile-photo-md" />
-              <textarea [(ngModel)]="postRealtime.content" name="post"  cols="100" rows="2" class="form-control" placeholder="Bạn đang nghĩ gì ?"></textarea>
+              <textarea name="post"  cols="100" rows="2" class="form-control" placeholder="Bạn đang nghĩ gì ?"></textarea>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <div style="float: right" class="tools">
-              <button (click)="onCreatePost()" class="btn btn-primary pull-right">Đăng bài</button>
+              <button class="btn btn-primary pull-right">Đăng bài</button>
               <ul class="publishing-tools list-inline">
                 <li>
                   <a href="#">
@@ -33,9 +33,8 @@
         </div>
       </div>
       <!-- Post Create Box End-->
-      <div class="text-center" *ngIf="!postRealtimeRef"><span class="fa fa-refresh fa-spin fa-2x fa-fw"></span></div>
-      <ng-container *ngIf="postRealtimeRef">
-        <div *ngFor="let _post of postRealtimes" class="post-content">
+      <ng-container>
+        <div class="post-content">
           <div class="post-container">
             <img src="http://placehold.it/300x300" alt="user" class="profile-photo-md pull-left" />
             <div class="post-detail">
@@ -53,7 +52,7 @@
               </div>
               <div class="line-divider"></div>
               <div class="post-text">
-                <p>{{_post.content}}</p>
+                <p>Noi dung</p>
               </div>
               <div class="line-divider"></div>
               <div class="post-comment">

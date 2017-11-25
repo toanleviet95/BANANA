@@ -8,29 +8,7 @@ import { LoginService } from '../../services/login.service';
 })
 
 export class LoginFormComponent implements OnInit {
-    model: any = {
-        email: '',
-        password: ''
-    };
-    errorMessage: string;
-
-    constructor(
-        private loginService: LoginService
-    ){}
     ngOnInit() {
 
-    }
-
-    login(): void {
-      
-      this.loginService.login(this.model.email, this.model.password).subscribe(
-          response => {
-            console.log(response);
-            window.location.href = 'newsfeed';
-          },
-          (error: Error) => {
-            this.errorMessage = error.message;
-            this.model.password = '';
-          });
     }
 }
