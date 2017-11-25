@@ -183,3 +183,12 @@
     background-color: #27aae1;
     border-color: #27aae1;
 }
+
+.procedure-table-title {
+    background: #27aae1;
+    color: white;
+}
+
+.step-thumbnail {
+    border: none;
+}

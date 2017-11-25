@@ -41,6 +41,16 @@ const routes: Routes = [
       ]
     },
     {
+      path: 'procedure',
+      component: CommonLayoutComponent,
+      children: [
+        {
+          path: '',
+          loadChildren: './modules/procedure/procedure.module#ProcedureModule'
+        }
+      ]
+    },
+    {
       path: 'messenger',
       component: CommonLayoutComponent,
       children: [
