@@ -2,6 +2,11 @@
 
 ### Binh Duong Hackathon Competition ###
 
+### Demo ###
+* Login
+Username: user@gmail.com
+Password: 123456
+
 ### Template ###
 
 * Friend Finder Template: http://thunder-team.com/friend-finder
