@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ComplainRoutingModule } from './complain.routing';
 
-import { StaffManageFilesContentComponent } from './components/staff-manage-files-content/staff-manage-files-content.component';
+import { ComplainComponent } from './components/complain/complain.component';
 import { LeftSideBarComponent } from '../../shared/components/left-side-bar/left-side-bar.component';
-
 
 @NgModule({
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+        ComplainRoutingModule
     ],
     declarations: [
-        LeftSideBarComponent,
-        StaffManageFilesContentComponent
+        ComplainComponent,
+        LeftSideBarComponent
     ],
     providers: []
 })
 
-export class StaffManageFilesModule { }
+export class ComplainModule { }
