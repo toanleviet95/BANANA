@@ -41,6 +41,16 @@ const routes: Routes = [
       ]
     },
     {
+      path: 'complain',
+      component: CommonLayoutComponent,
+      children: [
+        {
+          path: '',
+          loadChildren: './modules/complain/complain.module#ComplainModule'
+        }
+      ]
+    },
+    {
       path: 'procedure',
       component: CommonLayoutComponent,
       children: [
