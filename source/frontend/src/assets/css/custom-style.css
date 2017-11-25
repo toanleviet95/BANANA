@@ -211,3 +211,15 @@
 .step-thumbnail {
     border: none;
 }
+
+.dropdown > ul > li {
+    list-style-image:none;
+}
+
+.text-muted {
+    font-size: 11px;
+}
+
+.btn-default {
+    border-radius: 30px;
+}

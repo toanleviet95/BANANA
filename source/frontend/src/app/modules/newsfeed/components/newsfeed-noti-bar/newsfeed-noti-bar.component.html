@@ -2,5 +2,18 @@
   <div class="panel-heading">
     <h3 class="panel-title text-center">Thông báo mới</h3>
   </div>
-  <div class="panel-body">Nội dung ...</div>
+  <div class="panel-body">
+    <h4>
+      {{content.header}}
+    </h4>
+    <p>
+      {{content.content}}
+    </p>
+    <div class="text-center">
+      <ul class="pagination">
+        <li style="cursor: pointer" (click)="onPrev()"><span aria-hidden="true">&laquo;</span></li>
+        <li style="cursor: pointer" (click)="onNext()"><span aria-hidden="true">&raquo;</span></li>
+      </ul>
+    </div>
+  </div>
 </div>
