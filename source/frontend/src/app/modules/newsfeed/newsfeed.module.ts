@@ -6,8 +6,8 @@ import { NewsfeedRoutingModule } from './newsfeed.routing';
 import { NewsfeedContentComponent } from './components/newsfeed-content/newsfeed-content.component';
 import { NewsfeedNotiBarComponent } from './components/newsfeed-noti-bar/newsfeed-noti-bar.component';
 import { NewsfeedEventBarComponent } from './components/newsfeed-event-bar/newsfeed-event-bar.component';
-import { NewsfeedAccountBarComponent } from './components/newsfeed-account-bar/newsfeed-account-bar.component';
-import { NewsfeedOnlineBarComponent } from './components/newsfeed-online-bar/newsfeed-online-bar.component';
+import { LeftSideBarComponent } from '../../shared/components/left-side-bar/left-side-bar.component';
+import { OnlineBarComponent } from '../../shared/components/online-bar/online-bar.component';
 
 
 @NgModule({
@@ -17,10 +17,10 @@ import { NewsfeedOnlineBarComponent } from './components/newsfeed-online-bar/new
         NewsfeedRoutingModule
     ],
     declarations: [
-      NewsfeedOnlineBarComponent,
+      OnlineBarComponent,
       NewsfeedEventBarComponent,
       NewsfeedNotiBarComponent,
-      NewsfeedAccountBarComponent,
+      LeftSideBarComponent,
       NewsfeedContentComponent
     ],
     providers: []
