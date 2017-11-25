@@ -14,8 +14,8 @@ import { LeftSideBarComponent } from '../../shared/components/left-side-bar/left
         StaffExecuteFileRoutingModule
     ],
     declarations: [
-      StaffExecuteFileContentComponent,
-      LeftSideBarComponent
+        LeftSideBarComponent,
+        StaffExecuteFileContentComponent
     ],
     providers: []
 })

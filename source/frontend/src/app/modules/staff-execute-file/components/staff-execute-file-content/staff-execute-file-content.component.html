@@ -1,80 +1,64 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-3 static">
-        <app-left-side-bar></app-left-side-bar>
+      <app-left-side-bar></app-left-side-bar>
     </div>
     <div class="col-md-8">
+      <ol class="breadcrumb">
+        <li>
+          <a href="/">Trang chủ</a>
+        </li>
+        <li>Dịch vụ công</li>
+        <li>
+          <a href="/staff/manage">Xử lý hồ sơ</a>
+        </li>
+        <li class="active">HS00001</li>
+      </ol>
 
-      <!-- Post Create Box
-            ================================================= -->
-      <div class="create-post">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="form-group">
-              <img src="http://placehold.it/300x300" alt="" class="profile-photo-md" />
-              <textarea name="post"  cols="100" rows="2" class="form-control" placeholder="Bạn đang nghĩ gì ?"></textarea>
-            </div>
-          </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Thông tin người nộp</h3>
         </div>
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div style="float: right" class="tools">
-              <button class="btn btn-primary pull-right">Đăng bài</button>
-              <ul class="publishing-tools list-inline">
-                <li>
-                  <a href="#">
-                    <i class="ion-images"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="panel-body">
+          Panel content
         </div>
       </div>
-      <!-- Post Create Box End-->
-      <ng-container>
-        <div class="post-content">
-          <div class="post-container">
-            <img src="http://placehold.it/300x300" alt="user" class="profile-photo-md pull-left" />
-            <div class="post-detail">
-              <div class="user-info">
-                <h5>
-                  <a href="timeline.html" class="profile-link">Toan Le Viet</a>
-                </h5>
-                <p class="text-muted">12:22:22 21/11/2017</p>
-              </div>
-              <div class="reaction">
-                <a class="btn text-green">
-                  <i class="icon ion-thumbsup"></i> 13</a>
-                <a class="btn text-red">
-                  <i class="fa fa-thumbs-down"></i> 0</a>
-              </div>
-              <div class="line-divider"></div>
-              <div class="post-text">
-                <p>Noi dung</p>
-              </div>
-              <div class="line-divider"></div>
-              <div class="post-comment">
-                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
-                <p>
-                  <a href="timeline.html" class="profile-link">Diana </a>
-                  <i class="em em-laughing"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-              </div>
-              <div class="post-comment">
-                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
-                <p>
-                  <a href="timeline.html" class="profile-link">John</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-              </div>
-              <div class="post-comment">
-                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
-                <input type="text" class="form-control" placeholder="Post a comment">
-              </div>
-            </div>
-          </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Hồ sơ</h3>
         </div>
-      </ng-container>
+        <div class="panel-body">
+          <p>
+            <b>Tên hồ sơ:</b> Thủ tục cấp giấy chứng nhận vệ sinh an toàn thực phẩm</p>
+          <p>
+            <b>Mã hồ sơ:</b> HS00001</p>
+          <p>
+            <b>Hồ sơ bao gồm:</b>
+          </p>
+          <ol>
+            <li>
+              <p>
+                <b>Đơn đề nghị cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm (theo mẫu)</b>
+              </p>
+              <p>don_de_nghi.docx</p>
+            </li>
+            <li>
+              <p>
+                <b>Giấy chứng nhận đăng ký kinh doanh có đăng ký ngành nghề kinh doanh dịch vụ ăn uống (bản sao có xác nhận
+                  của cơ sở)</b>
+              </p>
+              <p>giay_chung_nhan.docx</p>
+            </li>
+          </ol>
+        </div>
       </div>
+
+      <p>
+        <button type="button" class="btn btn-primary">Hoàn tất</button>
+        <button type="button" class="btn btn-default">Yêu cầu bổ sung</button>
+      </p>
+
     </div>
   </div>
+</div>
