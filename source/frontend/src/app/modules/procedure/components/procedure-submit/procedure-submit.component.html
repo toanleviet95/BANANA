@@ -11,63 +11,181 @@
         <li class="active">Nộp hồ sơ</li>
       </ol>
 
-      <div class="row">
-        <div class="col-xs-4 col-md-4">
-          <a href="#" class="step-thumbnail">
-            <img src="/assets/images/info.jpg" alt="...">
-          </a>
-          <div>Nhập thông tin liên hệ</div>
-        </div>
-        <div class="col-xs-4 col-md-4">
-          <a href="#" class="step-thumbnail">
-            <img src="/assets/images/doc.jpg" alt="...">
-          </a>
-          <div>Nhập nội dung hồ sơ</div>
-        </div>
-        <div class="col-xs-4 col-md-4">
-          <a href="#" class="step-thumbnail">
-            <img class="img-thumbnail" src="/assets/images/sent.jpg" alt="...">
-          </a>
-          <div>Gửi hồ sơ</div>
-        </div>
-      </div>
-
-      <h5>Bạn vui lòng điền thông tin liên hệ để chúng tôi có thể thông báo cho bạn khi cần thiết.</h5>
-      <form class="form">
+      <!-- STEP 1 -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">Nộp hồ sơ trực tuyến</div>
+        <div class="panel-body">
           <div class="row">
+            <div class="col-xs-4 col-md-4">
+              <a href="#" class="step-thumbnail">
+                <img src="/assets/images/info.jpg" alt="...">
+              </a>
+              <div>Nhập thông tin liên hệ</div>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <a href="#" class="step-thumbnail">
+                <img src="/assets/images/doc.jpg" alt="...">
+              </a>
+              <div>Nhập nội dung hồ sơ</div>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <a href="#" class="step-thumbnail">
+                <img class="img-thumbnail" src="/assets/images/sent.jpg" alt="...">
+              </a>
+              <div>Gửi hồ sơ</div>
+            </div>
+          </div>
+
+          <p>Bạn vui lòng điền thông tin liên hệ để chúng tôi có thể thông báo cho bạn khi cần thiết</p>
+          <form class="form">
+            <div class="row">
               <div class="col-xs-6 form-group">
-                  <label>Label1</label>
-                  <input class="form-control" type="text"/>
+                <label>Họ và tên của bạn là</label>
+                <input class="form-control" type="text" />
               </div>
               <div class="col-xs-6 form-group">
-                  <label>Label2</label>
-                  <input class="form-control" type="text"/>
-              </div>
-              <div class="col-xs-6">
-                  <div class="row">
-                      <label class="col-xs-12">Label3</label>
-                  </div>
-                  <div class="row">
-                      <div class="col-xs-12 col-sm-6">
-                          <input class="form-control" type="text"/>
-                      </div>
-                      <div class="col-xs-12 col-sm-6">
-                          <input class="form-control" type="text"/>
-                      </div>
-                  </div>
+                <label>Số điện thoại của bạn là</label>
+                <input class="form-control" type="text" />
               </div>
               <div class="col-xs-6 form-group">
-                  <label>Label4</label>
-                  <input class="form-control" type="text"/>
+                <label>Địa chỉ email của bạn là</label>
+                <input class="form-control" type="text" />
+              </div>
+              <div class="col-xs-6 form-group">
+                <label>Nơi bạn đang ở</label>
+                <input class="form-control" type="text" />
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button class="btn btn-primary">Tra cứu</button>
+                  <button class="btn btn-primary pull-right">Tiếp</button>
                 </div>
               </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">Nộp hồ sơ trực tuyến</div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4 col-md-4">
+              <a href="#" class="step-thumbnail">
+                <img src="/assets/images/info.jpg" alt="...">
+              </a>
+              <div>Nhập thông tin liên hệ</div>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <a href="#" class="step-thumbnail">
+                <img src="/assets/images/doc.jpg" alt="...">
+              </a>
+              <div>Nhập nội dung hồ sơ</div>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <a href="#" class="step-thumbnail">
+                <img class="img-thumbnail" src="/assets/images/sent.jpg" alt="...">
+              </a>
+              <div>Gửi hồ sơ</div>
+            </div>
           </div>
-        
-      </form>
+
+          <p>Bạn vui lòng đính kèm những hồ sơ dưới đây:</p>
+          <form class="form">
+            <div class="form-group">
+              <label>1. Đơn đề nghị cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm (ATTP) (theo mẫu)</label>
+              <input type="file" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="pwd">2. Giấy chứng nhận đăng ký kinh doanh có đăng ký ngành nghề kinh doanh dịch vụ ăn uống (bản sao có xác nhận
+                của cơ sở)</label>
+              <input type="file" class="form-control">
+            </div>
+            <div class="row">
+              <div class="col-xs-6 form-group">
+                <div class="col-sm-10">
+                  <button class="btn btn-primary pull-left">Quay lại</button>
+                </div>
+              </div>
+              <div class="col-xs-6 form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button class="btn btn-primary pull-right">Tiếp</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">Nộp hồ sơ trực tuyến</div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4 col-md-4">
+              <a href="#" class="step-thumbnail">
+                <img src="/assets/images/info.jpg" alt="...">
+              </a>
+              <div>Nhập thông tin liên hệ</div>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <a href="#" class="step-thumbnail">
+                <img src="/assets/images/doc.jpg" alt="...">
+              </a>
+              <div>Nhập nội dung hồ sơ</div>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <a href="#" class="step-thumbnail">
+                <img class="img-thumbnail" src="/assets/images/sent.jpg" alt="...">
+              </a>
+              <div>Gửi hồ sơ</div>
+            </div>
+          </div>
+
+          <p>Bạn vui lòng kiểm tra lại các thông tin trước khi gửi hồ sơ</p>
+          <span>
+            <strong>Tên của bạn là: </strong>Nguyễn Minh Thiện
+          </span>
+          <br/>
+          <span>
+            <strong>Số điện thoại của bạn là: </strong>0973187444
+          </span>
+          <br/>
+          <span>
+            <strong>Địa chỉ email: </strong>nguyenminhthien@gmail.com
+          </span>
+          <br/><br/>
+          <strong>1. Đơn đề nghị cấp Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm (ATTP) (theo mẫu)</strong>
+          <h5>don_de_nghi.docx</h5>
+          <strong>2. Giấy chứng nhận đăng ký kinh doanh có đăng ký ngành nghề kinh doanh dịch vụ ăn uống (bản sao có xác nhận của
+            cơ sở)</strong>
+          <h5>don_de_nghi.docx</h5>
+
+          <div class="col-xs-6 form-group">
+            <div class="col-sm-10">
+              <button class="btn btn-primary pull-left">Quay lại</button>
+            </div>
+          </div>
+          <div class="col-xs-6 form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button class="btn btn-primary pull-right">Tiếp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- STEP 3 -->
+      <div class="panel panel-primary">
+          <div class="panel-heading">Nộp hồ sơ trực tuyến</div>
+          <div class="panel-body">
+              
+            <span>Cảm ơn bạn đã sử dụng dịch vụ nộp hồ sơ trực tuyến của chúng tôi. Hồ sơ của bạn sẽ được xử lý trong thời gian sớm nhất. Mã số biên nhận của bạn là ATTP4334. Bạn có thể sử dụng mã số biên nhận này để tra cứu tình trạng hồ sơ của bạn
+                <a href="#">tại đây</a></span>
+          </div>
+        </div>
     </div>
   </div>
 </div>
