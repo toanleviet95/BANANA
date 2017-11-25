@@ -4,8 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { StaffExecuteFileRoutingModule } from './staff-execute-file.routing';
 
 import { StaffExecuteFileContentComponent } from './components/staff-execute-file-content/staff-execute-file-content.component';
-import { LeftSideBarComponent } from '../../shared/components/left-side-bar/left-side-bar.component';
-
+import { StaffExecuteLeftSideBarComponent } from './components/staff-execute-left-side-bar/staff-execute-left-side-bar.component';
 
 @NgModule({
     imports: [
@@ -14,7 +13,7 @@ import { LeftSideBarComponent } from '../../shared/components/left-side-bar/left
         StaffExecuteFileRoutingModule
     ],
     declarations: [
-        LeftSideBarComponent,
+        StaffExecuteLeftSideBarComponent,
         StaffExecuteFileContentComponent
     ],
     providers: []

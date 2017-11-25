@@ -1,0 +1,41 @@
+<!-- Newsfeed Common Side Bar Left
+          ================================================= -->
+<div class="profile-card">
+  <img alt="user"
+       class="profile-photo"
+       src="/assets/images/user_ava.png" />
+  <h5>
+    <a class="text-white"
+       [routerLink]="['/timeline']">Nguyen My Dung</a>
+  </h5>
+  <span class="text-white"
+        style="font-size: 12px">
+  <i class="ion ion-android-person-add"></i>1,299 theo dõi</span>
+</div>
+<!--profile card ends-->
+<ul class="nav-news-feed">
+  <li>
+    <i class="icon ion-card"></i>
+    <div>
+      <a [routerLink]="['/timeline']">Bảng tin của tôi</a>
+    </div>
+  </li>
+  <!--<li>
+    <i class="icon ion-ios-people-outline"></i>
+    <div>
+      <a href="newsfeed-friends.html">Bạn bè</a>
+    </div>
+  </li>-->
+  <li>
+    <i class="icon ion-aperture"></i>
+    <div>
+      <a [routerLink]="['/procedure']">Dịch vụ công</a>
+    </div>
+  </li>
+  <!--<li>
+    <i class="icon ion-chatboxes"></i>
+    <div>
+      <a href="newsfeed-messages.html">Tin nhắn</a>
+    </div>
+  </li>-->
+</ul>

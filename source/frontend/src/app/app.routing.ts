@@ -7,7 +7,7 @@ import { CommonLayoutComponent } from './layouts/common-layout/common-layout.com
 const routes: Routes = [
     {
       path: '',
-      redirectTo: 'newsfeed',
+      redirectTo: 'authenticate',
       pathMatch: 'full'
     },
     {
