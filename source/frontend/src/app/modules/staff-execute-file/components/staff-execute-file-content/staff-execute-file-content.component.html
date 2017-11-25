@@ -17,16 +17,36 @@
         <li class="active">HS00001</li>
       </ol>
 
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Thông tin người nộp</h3>
         </div>
         <div class="panel-body">
-          Panel content
+            <div class="col-md-2">
+                <div class="profile-info">
+                    <img src="assets/images/user_ava.png" alt="" class="img-responsive profile-photo" />
+                </div>
+            </div>
+            <div class="col-md-5">
+              <div>
+                  <h5 style="margin-top:12px"><span class="glyphicon glyphicon-user"></span> Nguyen My Dung</h5>
+                </div>  
+                <div>
+                    <p style="margin-top:12px"><span class="glyphicon glyphicon-phone"></span> 0912456788</p>
+                  </div>
+            </div>
+            <div class="col-md-5">
+                <div>
+                    <p style="margin-top:12px"><span class="glyphicon glyphicon-envelope"></span> nguyenmydung@gmail.com</p>
+                  </div>  
+                  <div>
+                      <p style="margin-top:12px"><span class="glyphicon glyphicon-home"></span> 18/32 Bùi Thế Mĩ, Phường 8, Quận 5, Thành phố Bình Dương</p>
+                    </div>
+            </div>
         </div>
       </div>
 
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Hồ sơ</h3>
         </div>
@@ -58,8 +78,29 @@
 
       <p>
         <button type="button" class="btn btn-primary">Hoàn tất</button>
-        <button type="button" class="btn btn-default">Yêu cầu bổ sung</button>
+        <button data-toggle="modal" data-target="#myModal" type="button" class="btn btn-default">Yêu cầu bổ sung</button>
       </p>
+
+      <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+    
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Yêu cầu bổ sung hồ sơ</h4>
+              </div>
+              <div class="modal-body">
+                <p>Nội dung cần bổ sung</p>
+                <textarea></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Gửi yêu cầu</button>
+              </div>
+            </div>
+    
+          </div>
+        </div>
 
     </div>
   </div>

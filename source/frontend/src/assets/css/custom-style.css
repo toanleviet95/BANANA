@@ -223,3 +223,9 @@
 .btn-default {
     border-radius: 30px;
 }
+
+.icon-right{
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 15px;
+}
