@@ -183,3 +183,7 @@
     background-color: #27aae1;
     border-color: #27aae1;
 }
+
+.text-muted {
+    font-size: 11px;
+}
