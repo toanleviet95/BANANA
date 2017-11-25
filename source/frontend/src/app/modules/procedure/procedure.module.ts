@@ -6,6 +6,7 @@ import { ProcedureRoutingModule } from './procedure.routing';
 import { ProcedureContentComponent } from './components/procedure-content/procedure-content.component';
 import { ProcedureSubmitComponent } from './components/procedure-submit/procedure-submit.component';
 import { ProcedureLeftSideBarComponent } from './components/procedure-left-side-bar/procedure-left-side-bar.component';
+import { ProcedureSearchComponent } from './components/procedure-search/procedure-search.component';
 
 @NgModule({
     imports: [
@@ -14,6 +15,7 @@ import { ProcedureLeftSideBarComponent } from './components/procedure-left-side-
         ProcedureRoutingModule
     ],
     declarations: [
+      ProcedureSearchComponent,
       ProcedureLeftSideBarComponent,
       ProcedureContentComponent,
       ProcedureSubmitComponent
