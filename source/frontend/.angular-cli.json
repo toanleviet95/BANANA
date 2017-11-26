@@ -27,6 +27,7 @@
         ],
         "scripts": [
             "assets/js/jquery-3.1.1.min.js",
+            "./node_modules/js-cookie/src/js.cookie.js",
             "assets/js/bootstrap.min.js",
             "assets/js/jquery.appear.min.js",
             "assets/js/jquery.incremental-counter.js",

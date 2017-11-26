@@ -1,3 +1,4 @@
+import { Cookies } from 'js-cookie';
 import { Component, OnInit } from '@angular/core';
 declare var jquery;
 declare var $;
@@ -25,7 +26,13 @@ export class NewsfeedContentComponent implements OnInit {
   currentDate = null;
 
   ngOnInit() {
-
+    const email = Cookies.get('email');
+    const role =  Cookies.get('role');
+    if (typeof email === 'undefined' || typeof role === 'undefined') {
+      window.location.href = './authenticate';
+      return;
+    }
+    console.log(email + role);
   }
 
   onPost() {
