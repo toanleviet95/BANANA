@@ -89,6 +89,16 @@ const routes: Routes = [
           loadChildren: './modules/staff-execute-file/staff-execute-file.module#StaffExecuteFileModule'
         }
       ]
+    },
+    {
+      path: 'leader/poll',
+      component: CommonLayoutComponent,
+      children: [
+        {
+          path: '',
+          loadChildren: './modules/leader-poll/leader-poll.module#LeaderPollModule'
+        }
+      ]
     }
 ];
 

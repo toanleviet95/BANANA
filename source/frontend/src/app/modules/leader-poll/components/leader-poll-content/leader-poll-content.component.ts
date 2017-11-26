@@ -3,10 +3,10 @@ declare var jquery;
 declare var $;
 
 @Component ({
-    templateUrl: './newsfeed-content.component.html'
+    templateUrl: './leader-poll-content.component.html'
 })
 
-export class NewsfeedContentComponent implements OnInit {
+export class LeaderPollContentComponent implements OnInit {
   ngOnInit() {
 
   }
