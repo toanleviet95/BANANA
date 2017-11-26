@@ -1,4 +1,4 @@
-import { Cookies } from 'js-cookie';
+import * as Cookies from 'js-cookie';
 import { Component, OnInit } from '@angular/core';
 declare var jquery;
 declare var $;
@@ -25,14 +25,13 @@ export class NewsfeedContentComponent implements OnInit {
 
   currentDate = null;
 
+  user = {email: null, role: 1, name: null, avatar: null};
+
   ngOnInit() {
-    const email = Cookies.get('email');
-    const role =  Cookies.get('role');
-    if (typeof email === 'undefined' || typeof role === 'undefined') {
-      window.location.href = './authenticate';
-      return;
-    }
-    console.log(email + role);
+    this.user.email = Cookies.get('email');
+    this.user.role =  Cookies.get('role');
+    this.user.name =  Cookies.get('name');
+    this.user.avatar =  Cookies.get('avatar') || 'http://placehold.it/300x300';
   }
 
   onPost() {

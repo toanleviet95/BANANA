@@ -8,18 +8,26 @@ import {
   NavigationCancel,
   NavigationError
 } from '@angular/router';
-
+import * as Cookies from 'js-cookie';
 @Component({
   templateUrl: './common-layout.component.html'
 })
 
-export class CommonLayoutComponent {
+export class CommonLayoutComponent implements OnInit {
   loading = true;
 
   constructor(private router: Router) {
     router.events.subscribe((event: RouterEvent) => {
       this.navigationInterceptor(event);
     });
+  }
+  ngOnInit () {
+    const email = Cookies.get('email');
+    const role =  Cookies.get('role');
+    if (typeof email === 'undefined' || typeof role === 'undefined') {
+      window.location.href = './authenticate';
+      return;
+    }
   }
 
   // Shows and hides the loading spinner during RouterEvent changes

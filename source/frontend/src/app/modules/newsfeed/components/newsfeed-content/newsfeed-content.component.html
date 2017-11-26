@@ -12,7 +12,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <div class="form-group">
-              <img src="http://placehold.it/300x300" alt="" class="profile-photo-md" />
+              <img src="{{user.avatar}}" alt="" class="profile-photo-md" />
               <textarea [(ngModel)]="post.content" name="post"  cols="100" rows="2" class="form-control" placeholder="Bạn đang nghĩ gì ?"></textarea>
             </div>
           </div>
@@ -36,11 +36,11 @@
       <ng-container>
         <div *ngFor="let item of posts; let i = index" class="post-content">
           <div class="post-container">
-            <img src="http://placehold.it/300x300" alt="user" class="profile-photo-md pull-left" />
+            <img src="{{user.avatar}}" alt="user" class="profile-photo-md pull-left" />
             <div class="post-detail">
               <div class="user-info">
                 <h5>
-                  <a href="timeline.html" class="profile-link">Toan Le Viet</a>
+                  <a href="timeline.html" class="profile-link">{{user.name}}</a>
                 </h5>
                 <p class="text-muted">{{ item.date | date:'yyyy-MM-dd HH:mm a' }}</p>
               </div>
@@ -56,14 +56,14 @@
               </div>
               <div class="line-divider"></div>
               <div *ngFor="let cmt of item.comments" class="post-comment">
-                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
+                <img src="{{user.avatar}}" alt="" class="profile-photo-sm" />
                 <p>
-                  <a href="timeline.html" class="profile-link">Diana </a>
+                  <a href="timeline.html" class="profile-link">{{user.name}} </a>
                   {{cmt.content}}
                 </p>
               </div>
               <div class="post-comment">
-                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
+                <img src="{{user.avatar}}" alt="" class="profile-photo-sm" />
                 <input (keypress)="onComment(i, $event.keyCode)" [(ngModel)]="comment.content" type="text" class="form-control" placeholder="Post a comment">
               </div>
             </div>

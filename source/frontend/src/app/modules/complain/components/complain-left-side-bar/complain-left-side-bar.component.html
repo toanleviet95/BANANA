@@ -3,10 +3,10 @@
 <div class="profile-card">
   <img alt="user"
        class="profile-photo"
-       src="/assets/images/user_ava.png" />
+       src="{{user.avatar}}" />
   <h5>
     <a class="text-white"
-       [routerLink]="['/timeline']">Nguyen My Dung</a>
+       [routerLink]="['/timeline']">{{user.name}}</a>
   </h5>
   <span class="text-white"
         style="font-size: 12px">

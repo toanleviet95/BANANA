@@ -14,8 +14,8 @@ export class NewsfeedEventBarComponent implements OnInit {
           date: '20/11/2017'
         },
         {
-          content: 'Họp tổ dân phố',
-          date: '20/11/2017'
+          content: 'Họp khu phố 4',
+          date: '22/11/2017'
         }
       ];
     }

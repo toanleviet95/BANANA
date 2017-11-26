@@ -28,7 +28,11 @@
                 <a [routerLink]="['/messenger']">Tin nhắn</a>
               </li>
               <li class="dropdown">
-                <a [routerLink]="['/timeline/edit-profile-info']">Thông tin</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" ><span class="ion-person">&nbsp;Tùy chọn</span> <span><img src="/assets/images/down-arrow.png" /></span></a>
+                <ul class="dropdown-menu">
+                  <li><a [routerLink]="['/timeline/edit-profile-info']">Thông tin</a></li>
+                  <li style="cursor: pointer" (click)="logout()"><a href="javascript:void(0)">Đăng xuất</a></li>
+                </ul>
               </li>
             </ul>
             <form class="navbar-form navbar-right hidden-sm">
