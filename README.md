@@ -3,12 +3,18 @@
 ### Binh Duong Hackathon Competition ###
 
 ### Demo ###
-* Link demo: https://social-intranet.herokuapp.com
-* Login
+* Link demo giao diện: https://social-intranet.herokuapp.com
+* Login vai trò User
 Username: user@gmail.com
 Password: 123456
+* Login vai trò xử lý viên của bộ phận cơ quan
+Username: staff@gmail.com
+Password: 123456
+* Login vai trò cán bộ Ủy ban tỉnh
+Username: leader@gmail.com
+Password: 123456
 
-### Template ###
+### Template hỗ trợ ###
 
 * Friend Finder Template: http://thunder-team.com/friend-finder
 
@@ -29,7 +35,7 @@ Password: 123456
 ### Source ###
 
 * Frontend: AngularV5 Framework (ToanLV, DungNT)
-* Backend: LoopBack NodeJS Framework (ToanLV, ThienNM)
+* Backend: LoopBack NodeJS Framework (ToanLV)
 * Other: Fireloop (Realtime LoopBack SDK intergrated with Angular)
 
 ### Production Deployment ###
