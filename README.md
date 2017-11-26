@@ -1,4 +1,4 @@
-# Social Intranet #
+# Social Intranet (TEAM BANANA)#
 
 ### Binh Duong Hackathon Competition ###
 
