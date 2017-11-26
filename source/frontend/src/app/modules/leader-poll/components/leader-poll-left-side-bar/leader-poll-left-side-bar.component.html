@@ -1,0 +1,56 @@
+<!-- Newsfeed Common Side Bar Left
+          ================================================= -->
+<div class="profile-card">
+  <img alt="user" class="profile-photo" src="/assets/images/user_ava_leader.png" />
+  <h5>
+    <a class="text-white" [routerLink]="['/timeline']">UBND Tỉnh Bình Dương</a>
+  </h5>
+  <span class="text-white" style="font-size: 12px">
+    <i class="ion ion-android-person-add"></i>1,299 theo dõi</span>
+</div>
+<!--profile card ends-->
+<ul class="nav-news-feed">
+  <li>
+    <i class="icon ion-card"></i>
+    <div>
+      <a [routerLink]="['/timeline']">Bảng tin của tôi</a>
+    </div>
+  </li>
+  <!--<li>
+            <i class="icon ion-ios-people-outline"></i>
+            <div>
+              <a href="newsfeed-friends.html">Bạn bè</a>
+            </div>
+          </li>-->
+  <li>
+    <i class="icon ion-chatbubble-working"></i>
+    <div>
+      <a [routerLink]="['/complain']">Góp ý</a>
+    </div>
+  </li>
+  <li>
+    <i class="icon ion-speakerphone"></i>
+    <div>
+      <a [routerLink]="['/leader/announcement']">Đăng thông báo</a>
+    </div>
+  </li>
+  <li>
+    <i class="icon ion-clipboard"></i>
+    <div>
+      <a [routerLink]="['/leader/poll']">Khảo sát ý kiến</a>
+    </div>
+  </li>
+  <li>
+    <i class="icon ion-calendar"></i>
+    <div>
+      <a [routerLink]="['/leader/event']">Tạo sự kiện</a>
+    </div>
+  </li>
+
+  <!--<li>
+    <i class="icon ion-chatboxes"></i>
+    <div>
+      <a href="newsfeed-messages.html">Tin nhắn</a>
+    </div>
+  </li>-->
+</ul>

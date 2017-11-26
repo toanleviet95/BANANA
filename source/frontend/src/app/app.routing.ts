@@ -89,6 +89,36 @@ const routes: Routes = [
           loadChildren: './modules/staff-execute-file/staff-execute-file.module#StaffExecuteFileModule'
         }
       ]
+    },
+    {
+      path: 'leader/poll',
+      component: CommonLayoutComponent,
+      children: [
+        {
+          path: '',
+          loadChildren: './modules/leader-poll/leader-poll.module#LeaderPollModule'
+        }
+      ]
+    },
+    {
+      path: 'leader/announcement',
+      component: CommonLayoutComponent,
+      children: [
+        {
+          path: '',
+          loadChildren: './modules/leader-announcement/leader-announcement.module#LeaderAnnouncementModule'
+        }
+      ]
+    },
+    {
+      path: 'leader/event',
+      component: CommonLayoutComponent,
+      children: [
+        {
+          path: '',
+          loadChildren: './modules/leader-event/leader-event.module#LeaderEventModule'
+        }
+      ]
     }
 ];
 

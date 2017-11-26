@@ -1,0 +1,56 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 static">
+            <app-leader-poll-left-side-bar></app-leader-poll-left-side-bar>
+        </div>
+        <div class="col-md-8">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">Trang chủ</a>
+                </li>
+                <li class="active">Tạo sự kiện</li>
+            </ol>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Tạo sự kiện</h3>
+                </div>
+                <div class="panel-body">
+                    <form class="form">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label>Tên sự kiện</label>
+                                <input class="form-control" type="text" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-6">
+                                                <strong>Sự kiện diễn ra từ:</strong>
+                                                <leader-event-datetime-picker></leader-event-datetime-picker>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <strong>Sự kiện kết thúc lúc</strong>
+                                                <leader-event-datetime-picker></leader-event-datetime-picker>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 form-group">
+                                <div class="col-sm-12">
+                                    <button class="btn btn-primary pull-left">Tạo</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

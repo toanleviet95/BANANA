@@ -3,10 +3,10 @@
 <div class="profile-card">
   <img alt="user"
        class="profile-photo"
-       src="{{user.avatar}}" />
+       src="/assets/images/user_ava_leader.png" />
   <h5>
     <a class="text-white"
-       [routerLink]="['/timeline']">{{user.name}}</a>
+       [routerLink]="['/timeline']">UBND Tỉnh Bình Dương</a>
   </h5>
   <span class="text-white"
         style="font-size: 12px">
@@ -20,24 +20,37 @@
       <a [routerLink]="['/timeline']">Bảng tin của tôi</a>
     </div>
   </li>
+  <li>
+      <i class="icon ion-chatbubble-working"></i>
+      <div>
+        <a [routerLink]="['/complain']">Góp ý</a>
+      </div>
+    </li>
+    <li>
+      <i class="icon ion-speakerphone"></i>
+      <div>
+        <a [routerLink]="['/leader/announcement']">Đăng thông báo</a>
+      </div>
+    </li>
+    <li>
+      <i class="icon ion-clipboard"></i>
+      <div>
+        <a [routerLink]="['/leader/poll']">Khảo sát ý kiến</a>
+      </div>
+    </li>
+    <li>
+      <i class="icon ion-calendar"></i>
+      <div>
+        <a [routerLink]="['/leader/event']">Tạo sự kiện</a>
+      </div>
+    </li>
   <!--<li>
     <i class="icon ion-ios-people-outline"></i>
     <div>
       <a href="newsfeed-friends.html">Bạn bè</a>
     </div>
   </li>-->
-  <li>
-    <i class="icon ion-chatbubble-working"></i>
-    <div>
-      <a [routerLink]="['/complain']">Góp ý</a>
-    </div>
-  </li>
-  <li>
-    <i class="icon ion-briefcase"></i>
-    <div>
-      <a [routerLink]="['/procedure']">Dịch vụ công</a>
-    </div>
-  </li>
+  
   <!--<li>
     <i class="icon ion-chatboxes"></i>
     <div>
