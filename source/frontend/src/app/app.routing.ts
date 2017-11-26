@@ -109,6 +109,16 @@ const routes: Routes = [
           loadChildren: './modules/leader-announcement/leader-announcement.module#LeaderAnnouncementModule'
         }
       ]
+    },
+    {
+      path: 'leader/event',
+      component: CommonLayoutComponent,
+      children: [
+        {
+          path: '',
+          loadChildren: './modules/leader-event/leader-event.module#LeaderEventModule'
+        }
+      ]
     }
 ];
 
