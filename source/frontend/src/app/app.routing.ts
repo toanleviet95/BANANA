@@ -99,8 +99,6 @@ const routes: Routes = [
           loadChildren: './modules/leader-poll/leader-poll.module#LeaderPollModule'
         }
       ]
-
-
     },
     {
       path: 'leader/announcement',
@@ -109,16 +107,6 @@ const routes: Routes = [
         {
           path: '',
           loadChildren: './modules/leader-announcement/leader-announcement.module#LeaderAnnouncementModule'
-        }
-      ]
-    },
-	{
-      path: 'leader/event',
-      component: CommonLayoutComponent,
-      children: [
-        {
-          path: '',
-          loadChildren: './modules/leader-event/leader-event.module#LeaderEventModule'
         }
       ]
     }
