@@ -14,6 +14,12 @@ Password: 123456
 Username: leader@gmail.com
 Password: 123456
 
+### How to run ###
+b1: Cài môi trường NODEJS và ANGULAR CLI
+b2: Vào thư mục source/frontend
+b3: Gõ lệnh terminal npm install
+b4: Sau đó gõ lệnh npm start
+
 ### Template hỗ trợ ###
 
 * Friend Finder Template: http://thunder-team.com/friend-finder
