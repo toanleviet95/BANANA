@@ -1,23 +1,35 @@
-# Social Intranet (TEAM BANANA)#
+# Social Intranet (TEAM BANANA)
 
 ### Binh Duong Hackathon Competition ###
 
 ### Demo ###
 * Link demo giao diện: https://social-intranet.herokuapp.com
+
 * Login vai trò User
+
 Username: user@gmail.com
+
 Password: 123456
+
 * Login vai trò xử lý viên của bộ phận cơ quan
+
 Username: staff@gmail.com
+
 Password: 123456
+
 * Login vai trò cán bộ Ủy ban tỉnh
+
 Username: leader@gmail.com
+
 Password: 123456
 
 ### How to run ###
 b1: Cài môi trường NODEJS và ANGULAR CLI
+
 b2: Vào thư mục source/frontend
+
 b3: Gõ lệnh terminal npm install
+
 b4: Sau đó gõ lệnh npm start
 
 ### Template hỗ trợ ###
