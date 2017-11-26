@@ -38,25 +38,25 @@
       <a [routerLink]="['/procedure/search']">Tra cứu hồ sơ</a>
     </div>
   </li>
-  <li *ngIf="user.role === 2">
+  <li *ngIf="user.role == 2">
     <i class="icon ion-printer"></i>
     <div>
       <a [routerLink]="['/staff/manage']">Xử lý hồ sơ</a>
     </div>
   </li>
-  <li *ngIf="user.role === 3">
+  <li *ngIf="user.role == 3">
     <i class="icon ion-speakerphone"></i>
     <div>
       <a [routerLink]="['/leader/announcement']">Đăng thông báo</a>
     </div>
   </li>
-  <li *ngIf="user.role === 3">
+  <li *ngIf="user.role == 3">
     <i class="icon ion-clipboard"></i>
     <div>
       <a [routerLink]="['/leader/poll']">Khảo sát ý kiến</a>
     </div>
   </li>
-  <li *ngIf="user.role === 3">
+  <li *ngIf="user.role == 3">
     <i class="icon ion-calendar"></i>
     <div>
       <a [routerLink]="['/leader/event']">Tạo sự kiện</a>
