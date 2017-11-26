@@ -3,10 +3,10 @@
 <div class="profile-card">
   <img alt="user"
        class="profile-photo"
-       src="http://placehold.it/300x300" />
+       src="/assets/images/user_ava_leader.png" />
   <h5>
     <a class="text-white"
-       href="timeline.html">Lê Viết Toàn</a>
+       [routerLink]="['/timeline']">UBND Tỉnh Bình Dương</a>
   </h5>
   <span class="text-white"
         style="font-size: 12px">
@@ -15,27 +15,22 @@
 <!--profile card ends-->
 <ul class="nav-news-feed">
   <li>
-    <i class="icon ion-ios-paper"></i>
+    <i class="icon ion-card"></i>
     <div>
-      <a href="newsfeed.html">Bản tin của tôi</a>
+      <a [routerLink]="['/timeline']">Bảng tin của tôi</a>
     </div>
   </li>
-  <li>
+  <!--<li>
     <i class="icon ion-ios-people-outline"></i>
     <div>
       <a href="newsfeed-friends.html">Bạn bè</a>
     </div>
-  </li>
-  <li>
+  </li>-->
+  
+  <!--<li>
     <i class="icon ion-chatboxes"></i>
     <div>
       <a href="newsfeed-messages.html">Tin nhắn</a>
     </div>
-  </li>
-  <li>
-    <i class="icon ion-images"></i>
-    <div>
-      <a href="newsfeed-images.html">Hình ảnh</a>
-    </div>
-  </li>
+  </li>-->
 </ul>
